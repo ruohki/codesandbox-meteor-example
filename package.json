@@ -2,6 +2,7 @@
   "name": "codesandbox-meteor-example",
   "private": true,
   "scripts": {
+    "preinstall": "curl https://install.meteor.com/ | sh && echo \"export PATH=$PATH:$HOME/.meteor\" >> ~/.bashrc",
     "start": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
     "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
